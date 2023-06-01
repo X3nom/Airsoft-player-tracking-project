@@ -125,12 +125,12 @@ class Ids():
             self.ids.pop(self.ids.index(self.get_id_from_ids(id_to_pop)))
     
 
-class Team():
+class Team(): #class containing info about what clolor range of armband is associated to which team name
     def __init__(self,name,upper_color,lower_color,display_color=(255,0,255)) -> None:
-        self.name = name
-        self.upper_color = upper_color
-        self.lower_color = lower_color
-        self.display_color = display_color
+        self.name = name #team name
+        self.upper_color = upper_color # brightest/highest color shade that is recognized as teams armband (numpy array, color has to be in VHS format)
+        self.lower_color = lower_color # darkest/lowest color shade that is recognized as teams armband (numpy array, color has to be in VHS format)
+        self.display_color = display_color # color of player border (mainly for debuging purposes)
 
 def find_closest_enemy(enemies,screencenter):
     if len(enemies) > 0:
