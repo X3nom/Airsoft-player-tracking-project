@@ -155,7 +155,7 @@ colorless_playing = False # True = FORCE DETECTION OF COLORLESS TEAM !
 people = np.empty((0,5))
 color = (0,0,255)
 
-capture = 0#r"C:\Users\Jakub\Programming\Python\openCV\samples\randalls squad sample.mp4" # <--- set video capture (source)
+capture = 0# <--- set video capture (source)
 
 stream = WebcamStream(capture)
 stream.start()
